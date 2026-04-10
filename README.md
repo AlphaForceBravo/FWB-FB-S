@@ -69,7 +69,7 @@ A macro designed specifically for fishing in **Bridger Western**. This bot uses 
 
 ---
 
-## ⚠️ Important Information (TOS)
+## ⚠️ Important Information
 * **Save Buttons:** When a value is changed, the **Save** button turns **Red**. You MUST click it until it turns **Green** to apply the change.
 * **Account Risk:** This macro is **BANNABLE**. You accept all risks by using it.
 * **Auto-Updater:** The bot automatically checks GitHub for new updates on launch!
