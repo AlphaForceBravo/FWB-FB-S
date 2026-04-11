@@ -78,6 +78,7 @@ A macro designed specifically for fishing in **Bridger Western**. This bot uses 
 * **Hide terminal / Show Terminal:** Button shows or hides the GUI terminal at the bottom.
 * **Send Feedback:** You can send feedback / bug reports to me via the button, just type your concerns in the box (Max of 350 characters) and click **"SEND TO DEVELOPER"**. (A message will pop up in the ui terminal saying whether or not it was successfully sent)
 
+---
 
 ## ⚠️ Important Information
 * **Save Buttons:** When a value is changed, the **Save** button turns **Red**. You MUST click it until it turns **Green** to apply the change.
