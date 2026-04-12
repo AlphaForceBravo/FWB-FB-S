@@ -29,6 +29,10 @@ A macro designed specifically for fishing in **Bridger Western**. This bot uses 
 
 ## ⚙️ Understanding the Settings
 
+###Chest Movement###
+* **Options: *None* | *Left* | *Right***: These options are for when the fishing minigame ends, if your spot requires you to move either to the left or right, then this is what that options is for, any input below 1.0 will tap the a or d button, anything above will hold the a or d button.
+* **Side Walk (s):** How many seconds the script walks your character to the left or right. (Only really needed if your spot requires you to move to the left or right AFTER the chest minigame launches and ragdolls you)
+
 ### **Delays & Settings**
 * **Bait Delay (s):** How long the bot waits after pressing the bait hotkey before switching to the rod.
 * **Rod Delay (s):** The pause after equipping the rod before attempting to cast.
@@ -75,6 +79,7 @@ A macro designed specifically for fishing in **Bridger Western**. This bot uses 
 ## ⌨️ Extra
 ### **More Buttons**
 * **Sticky Menu: ON/OFF:** Sticky menu is whether the GUI is forced to stay as the top overlay. (So if it's enabled, even if you alt tab into the game, although the script is not tabbed in, it's still forced as the top overlay and stays on top of the game window.)
+* **Hide/Show**: The hide shows buttons are for whether or not you wanna hide or show the categories settings. (If the large GUI is taking up a lot of screen, then click the hide buttons to decrease the height of the overlay.)
 * **Hide terminal / Show Terminal:** Button shows or hides the GUI terminal at the bottom.
 * **Send Feedback:** You can send feedback / bug reports to me via the button, just type your concerns in the box (Max of 350 characters) and click **"SEND TO DEVELOPER"**. (A message will pop up in the ui terminal saying whether or not it was successfully sent)
 
