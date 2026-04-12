@@ -29,7 +29,7 @@ A macro designed specifically for fishing in **Bridger Western**. This bot uses 
 
 ## ⚙️ Understanding the Settings
 
-###Chest Movement###
+### **Chest Movement** ###
 * **Options: *None* | *Left* | *Right***: These options are for when the fishing minigame ends, if your spot requires you to move either to the left or right, then this is what that options is for, any input below 1.0 will tap the a or d button, anything above will hold the a or d button.
 * **Side Walk (s):** How many seconds the script walks your character to the left or right. (Only really needed if your spot requires you to move to the left or right AFTER the chest minigame launches and ragdolls you)
 
