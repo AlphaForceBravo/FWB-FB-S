@@ -23,6 +23,24 @@ A high-performance automation utility designed for fishing in **Bridger Western*
 
 ---
 
+## 🧪 Advanced Audio Calibration (Stop "Ghost Bites")
+
+If the bot is reeling in the rain without a fish (Ghost Bites), you need to calibrate your settings using the live data from your terminal.
+
+### 1. Identify the Noise
+When a ghost bite happens, look at the bottom of the bot's terminal for a line that looks like this:
+`[BITE] Splash! Peak: 0.2708 | Baseline: 0.1221 | Ratio: 2.2x`
+
+### 2. Adjust Your Settings
+To stop the rain from triggering a reel, you must set your "Goalposts" just above the numbers produced by the rain:
+* **Min Volume Threshold**: Look at the `Peak` number. If the rain hit **0.2708**, set your **Min Volume** to **0.28** to block it.
+* **Spike Sensitivity (Ratio)**: Look at the `Ratio` number. If the rain hit **2.2x**, set your **Spike Sensitivity** to **2.3** or **2.4**.
+
+> **Note:** You must toggle the Advanced Settings Option at the top of the script to unlock these settings that appear at the bottom of the script.  
+> **Pro Tip:** If you continue to get ghost bites, simply check the terminal again for the *new* highest peak and ratio the rain is producing and adjust slightly higher.
+
+---
+
 ## ⚙️ Understanding the Settings
 
 ### Chest & Movement
@@ -30,9 +48,9 @@ A high-performance automation utility designed for fishing in **Bridger Western*
 * **Side Walk (s):** How many seconds the script holds the movement key after a catch.
 
 ### Delays & Audio
-* **Bait/Rod Delay (s):** Optimized to **0.1s** in v3.1 for lightning-fast equipping.
-* **Min Volume Threshold:** The "Sensitivity" for the splash sound. Adjust this so the bot only reacts to the fish splash and not background noise.
-* **Reel Timeout (s):** How long to wait for a bite before re-casting. After 5 timeouts, the **Emergency Failsafe** will Alt+F4 your game to protect your account.
+* **Bait/Rod Delay (s):** How long you want the script to wait before clicking the items in your hotbar. (Optimized to **0.1s** in v3.1 for lightning-fast equipping.)
+* **Reel Timeout (s):** How long to wait for a bite before re-casting. After 5 timeouts, the **Emergency Failsafe** will Alt+F4 your game.
+* **Reel Click Delay (s):** How long the script should wait to reel in the fishing rod after a spike is detected. (Optimized to 0.0 after v3.0, this shouldn't be touched at all)
 
 ---
 
@@ -44,7 +62,7 @@ A high-performance automation utility designed for fishing in **Bridger Western*
 ### Script Hotkeys
 * **Start (F1):** Begins the fishing loop.
 * **Stop (F2):** Safely stops the bot after the current cast.
-* **Calibrate (F3):** Opens the minigame region selector.
+* **Calibrate (F3):** Opens the screen region selector.
 * **Overlay (F4):** Toggles the mini-stats box. Double-click this box to re-open the main menu.
 
 ---
@@ -52,10 +70,10 @@ A high-performance automation utility designed for fishing in **Bridger Western*
 ## 🖥️ Extra Features
 
 * **Sticky Menu:** Forces the GUI to stay on top of the Roblox window.
-* **ToolTips:** When hovering over a specific setting, shows the description of what that setting does.
+* **ToolTips:** Hover over any setting to see a detailed description of what it does.
 * **Hide/Show Categories:** Collapse sections of the GUI to save screen space.
-* **Black Box Terminal:** If the bot stops, the terminal will now print a **[CRASH REPORT]** with exact details to help you fix the issue.
-* **Auto-Migration:** v3.1 and onwards automatically detects old v2.5 settings and updates your delays to the new 0.1s standard. (If it didn't delete your `settings.json` file and then click any save button to re-make it)
+* **Black Box Terminal:** If the bot stops, the terminal will print a **[CRASH REPORT]** with exact details.
+* **Auto-Migration:** v3.1+ automatically detects old v2.5 settings and updates your delays to the new 0.1s standard.
 * **Send Feedback:** Send bug reports directly to the developer (Max 350 characters).
 
 ---
