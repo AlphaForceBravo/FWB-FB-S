@@ -2,7 +2,8 @@
 
 A high-performance automation utility designed for fishing in **Bridger Western**. This bot utilizes **Real-Time Audio Frequency Analysis** and **OCR (Optical Character Recognition)** to provide a near-perfect fishing experience.
 
-> **Note:** Version (v3.0 Onwards) has transitioned to **Audio-Based Detection**. It listens for the specific frequency of the "Splash" sound, making it significantly more reliable than old visual-based macros.
+> **Note:** Version (v3.0 Onwards) has transitioned to **Audio-Based Detection**. It listens for the specific frequency of the "Splash" sound, making it significantly more reliable than old visual-based macros.  
+> If you need support, join the Discord Server and create a ticket - https://discord.gg/euQnmmAnDj
 
 ---
 
