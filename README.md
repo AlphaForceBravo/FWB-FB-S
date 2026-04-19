@@ -1,8 +1,8 @@
-# 🎣 Bridger: Western Fishing Bot | v3.0.0+
+# 🎣 Bridger: Western Fishing Bot | v3.2.3
 
-A high-performance automation utility designed for fishing in **Bridger Western**. This bot utilizes **Real-Time FFT Audio Frequency Analysis**, **Advanced OCR (Optical Character Recognition)**, and a **Corner-Anchored Macro System** to provide a near-perfect, hands-free fishing experience.
+A high-performance automation utility designed for fishing in **Bridger Western**. This bot utilizes **Real-Time FFT Audio Frequency Analysis**, **Lightning-Fast OpenCV Template Matching**, and a **Customizable Macro System** to provide a near-perfect, hands-free fishing experience.
 
-> **Note:** Version 3.2.1 introduces a massive overhaul to 3D movement recovery and audio filtering.   
+> **Note:** Version 3.2.3 introduces an editable macro UI, ultra-fast OpenCV vision modes, and a smart bait toggle.
 > If you need support, join the Discord Server and create a ticket: https://discord.gg/euQnmmAnDj
 
 ---
@@ -17,7 +17,7 @@ A high-performance automation utility designed for fishing in **Bridger Western*
 * **Calibrate (F3):** Once in-game, fish until the minigame appears. Press **F3** and drag the red box over the minigame area, then press Enter to save the box coordinates.
 
 ### Player Positioning & Setup
-1. **The Corner Anchor:** Position yourself backed perfectly into a physical wall or corner. This is your "Anchor Point" which prevents the bot from drifting over time.
+1. **The Corner Anchor:** Position yourself backed perfectly into a physical wall or corner. This is your "Anchor Point" which prevents the bot from drifting over time. *(Note: If you don't have walls nearby, you can set the Corner Direction to "None" in the settings).*
 2. **View:** Enter **First Person** and face your character towards the water, aim your mouse towards the middle of your left arm to guarantee that the bot will hear the splash while in the rain.
 3. **Audio Routing:** The bot uses FFT Frequency subtraction to ignore rain. 
    > **⚠️ Important Audio Setup:** Because the bot listens for the splash, loud background apps like Discord or YouTube can trigger false catches. To prevent this, you have two options:
@@ -46,22 +46,24 @@ Found on the **Dashboard**. This opens a live feed showing exactly what the bot 
 
 ## ⟳ Movement & Positioning (The Anchor System)
 
-Because Roblox chests ragdoll your character, version 3.2.1 introduces the **Corner Anchor System** to maintain perfect 3D positioning. 
+Because Roblox chests ragdoll your character, the bot uses a customizable recovery system.
 
 1. Go to the **⟳ Movement & Pos** tab.
-2. Set your **Corner wall direction** (Left or Right).
+2. Set your **Corner wall direction** (Left, Right, or None).
 3. Press **F5** to record your **Ledge Path**, walking from your safe corner wall to the edge of the water.
 4. Press **F6** to record your **Wander Path**, walking away from the water for your Anti-AFK Spooked sequence.
-5. **How it works:** When you catch a chest, the bot waits for you to stand up, physically rams you backward into your corner wall to reset your 3D coordinates, walks your recorded Ledge Path back to the water, collects the chest, and continues fishing flawlessly!
+5. **Macro Editor:** Click the **✏️ Edit** button to manually fine-tune your recorded paths down to the exact millisecond!
+6. **How it works:** When you catch a chest, the bot waits for you to stand up, physically rams you backward into your corner wall to reset your 3D coordinates, walks your Ledge Path back to the water, collects the chest, and continues fishing flawlessly!
 
 ---
 
 ## ⚙️ Understanding the Settings
 
-### Delays & Audio
-* **Bait/Rod Delay (s):** Optimized to **0.1s** for lightning-fast equipping.
-* **Fish Timeout (s):** How long to wait for a bite before re-casting. Set to **15.0s**. 
+### Delays, Audio, & Vision
+* **Disable Bait Toggle:** If enabled, the bot skips pressing the bait key and automatically adds +5.0s to your fish timeout so you don't infinite loop.
+* **Fish Timeout (s):** How long to wait for a bite before re-casting. Set to **15.0s** (or 20.0s without bait). 
 * **Clean Threshold:** How loud the fish splash must be *above* the background rain to trigger.
+* **Minigame Vision Mode:** Found in the Advanced tab. Highly recommended to leave this on **Template (Fastest: ~2ms)** for lightning-fast minigame reaction times.
 
 ### Failsafe System
 If the bot times out 5 times in a row, it assumes you are stuck or disconnected. It will generate a `failsafe_report.json` file and Alt+F4 the game to protect your character. The next time you launch the bot, a popup will display your exact stats (Catches, Rares, and Stack Status). 
