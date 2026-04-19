@@ -1,8 +1,8 @@
-# 🎣 Bridger: Western Fishing Bot | v3.2.4
+# 🎣 Bridger: Western Fishing Bot | v3.2.5
 
 A high-performance automation utility designed for fishing in **Bridger Western**. This bot utilizes **Real-Time FFT Audio Frequency Analysis**, **Lightning-Fast OpenCV Template Matching**, and a **Customizable Macro System** to provide a near-perfect, hands-free fishing experience.
 
-> **Note:** Version 3.2.3 introduces an editable macro UI, ultra-fast OpenCV vision modes, and a smart bait toggle.
+> **Note:** Version 3.2.5 introduces a dynamically scaling calibration system, anti-virus update protections, and major UI stability fixes. 
 > If you need support, join the Discord Server and create a ticket: https://discord.gg/euQnmmAnDj
 
 ---
@@ -14,7 +14,7 @@ A high-performance automation utility designed for fishing in **Bridger Western*
 * **Permissions:** Double-click the `.exe` to start. The bot automatically requests **Administrator** privileges to ensure keystrokes properly reach the Roblox client.
 * **Monitor Selection:** Go to the **⚙ Bot Settings** tab and select the monitor where Roblox is running to ensure the bot captures the correct screen coordinates. 
 * **Tesseract Link:** Click **Browse**, navigate to where you installed Tesseract (usually `C:\Program Files\Tesseract-OCR\tesseract.exe`), and click **Save**. 
-* **Calibrate (F3):** Once in-game, fish until the minigame appears. Press **F3** and drag the red box over the minigame area, then press Enter to save the box coordinates.
+* **Calibrate (F3):** Once in-game, fish until the minigame appears. Press **F3** and drag the red box over the minigame area, then press Enter to save the box coordinates. *(Note: The box dynamically scales to the exact monitor you selected in Settings).*
 
 ### Player Positioning & Setup
 1. **The Corner Anchor:** Position yourself backed perfectly into a physical wall or corner. This is your "Anchor Point" which prevents the bot from drifting over time. *(Note: If you don't have walls nearby, you can set the Corner Direction to "None" in the settings).*
@@ -63,6 +63,7 @@ Because Roblox chests ragdoll your character, the bot uses a customizable recove
 * **Disable Bait Toggle:** If enabled, the bot skips pressing the bait key and automatically adds +5.0s to your fish timeout so you don't infinite loop.
 * **Fish Timeout (s):** How long to wait for a bite before re-casting. Set to **15.0s** (or 20.0s without bait). 
 * **Clean Threshold:** How loud the fish splash must be *above* the background rain to trigger.
+* **Reel Click Delay (s):** Found in the Advanced tab. Manually fine-tune the delay between hearing the splash and clicking to reel the fish in.
 * **Minigame Vision Mode:** Found in the Advanced tab. Highly recommended to leave this on **Template (Fastest: ~2ms)** for lightning-fast minigame reaction times.
 
 ### Failsafe System
