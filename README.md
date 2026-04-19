@@ -1,4 +1,4 @@
-# 🎣 Bridger: Western Fishing Bot | v3.2.5
+# 🎣 Bridger: Western Fishing Bot | v3.2.6
 
 A high-performance automation utility designed for fishing in **Bridger Western**. This bot utilizes **Real-Time FFT Audio Frequency Analysis**, **Lightning-Fast OpenCV Template Matching**, and a **Customizable Macro System** to provide a near-perfect, hands-free fishing experience.
 
