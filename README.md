@@ -2,7 +2,7 @@
 
 A high-performance automation utility designed for fishing in **Bridger Western**. This bot utilizes **Real-Time FFT Audio Frequency Analysis**, **Lightning-Fast OpenCV Template Matching**, and a **Customizable Macro System** to provide a near-perfect, hands-free fishing experience.
 
-> **Note:** Version 3.2.5 introduces a dynamically scaling calibration system, anti-virus update protections, and major UI stability fixes. 
+> **Note:** Version 3.2.6 brings a massive quality-of-life upgrade to how the bot handles your saved settings, ensuring your custom hotkeys and delays are strictly protected between reboots!   
 > If you need support, join the Discord Server and create a ticket: https://discord.gg/euQnmmAnDj
 
 ---
