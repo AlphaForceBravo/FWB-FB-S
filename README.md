@@ -1,8 +1,8 @@
-# 🎣 Bridger: Western Fishing Bot | v3.3.1
+# 🎣 Bridger: Western Fishing Bot | v3.3.2
 
 A high-performance automation utility designed for fishing in **Bridger Western**. This bot utilizes **Real-Time FFT Audio Frequency Analysis**, **Lightning-Fast OpenCV Template Matching**, and a **Customizable Macro System** to provide a near-perfect, hands-free fishing experience.
 
-> **Note:** Version 3.3.1 is a targeted cleanup and quality-of-life update that permanently neutralizes "ghost files" left behind by the auto-updater and provides better visual feedback during setup.  
+> **Note:** Version 3.3.2 is a critical architecture update that completely overhauls how the bot handles screen coordinates, permanently fixing vision issues for users with multiple monitors.   
 > If you need support, join the Discord Server and create a ticket: https://discord.gg/euQnmmAnDj
 
 ---
