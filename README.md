@@ -1,8 +1,8 @@
-# 🎣 Bridger: Western Fishing Bot | v3.2.9
+# 🎣 Bridger: Western Fishing Bot | v3.3.0
 
 A high-performance automation utility designed for fishing in **Bridger Western**. This bot utilizes **Real-Time FFT Audio Frequency Analysis**, **Lightning-Fast OpenCV Template Matching**, and a **Customizable Macro System** to provide a near-perfect, hands-free fishing experience.
 
-> **Note:** Version 3.2.9 is a critical hotfix update that makes the Minigame QTE bulletproof across all monitor sizes and resolves a stubborn UI loop bug for the `Live Debug Viewer`.  
+> **Note:** Version 3.3.0 is a structural hotfix that completely overhauls how the bot handles file paths, permanently fixing an issue where user calibration settings would fail to load or mysteriously delete themselves.
 > If you need support, join the Discord Server and create a ticket: https://discord.gg/euQnmmAnDj
 
 ---
