@@ -1,8 +1,8 @@
-# 🎣 Bridger: Western Fishing Bot | v3.3.6
+# 🎣 Bridger: Western Fishing Bot | v3.3.7
 
 A high-performance automation utility designed for fishing in **Bridger Western**. This bot utilizes **Real-Time FFT Audio Frequency Analysis**, **Lightning-Fast OpenCV Template Matching**, and a **Customizable Macro System** to provide a near-perfect, hands-free fishing experience.
 
-> **Note:** Version 3.3.6 is a critical hotfix that eliminates the "Silent Freeze" bug on startup and completely overhauls how Template Mode detects the minigame on smaller displays!  
+> **Note:** Version 3.3.7 is a highly requested hotfix that permanently squashes the infamous "Equip Loop" bug!  
 > If you need support, join the Discord Server and create a ticket: https://discord.gg/euQnmmAnDj
 
 ---
